@@ -1,0 +1,76 @@
+.container
+{
+    max-height: 1500px;
+    max-width: 1500px;
+}
+
+.rowth
+{
+    padding: 10px;
+    justify-self: center;
+}
+
+.cell
+{
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    user-select: none;
+}
+
+.light
+{
+    background-color: azure;
+}
+
+.dark
+{
+    background-color: lightskyblue;
+}
+
+.piece
+{
+    height: 50%;
+    width: 50%;
+    border: 2px solid;
+    align-content: center;
+    text-align: center;
+}
+
+.target
+{
+    border-color: red;
+}
+
+.path-marker
+{
+    height: 90%;
+    width: 90%;
+    border: 10px solid green;
+    align-content: center;
+}
+
+.WHITE
+{
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+
+.BLACK
+{
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+
+button
+{
+    border: 1px solid lightskyblue;
+    background-color: azure;
+    min-height: 25px;
+    min-width: 50px;
+    border-radius: 10px;
+}

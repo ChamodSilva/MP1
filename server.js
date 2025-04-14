@@ -10,6 +10,34 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.post('/lichess-api', async (req, res) =>
+{
+    const { gameId } = req.body;
+    const url = `https://lichess.org/game/export/${gameId}`; //?pgnInJson=true&accuracy=true
+
+    try
+    {
+        const response = await fetch(url,
+        {
+            headers:
+            {
+                Accept: "application/json",
+            }
+        });
+        if (!response.ok)
+        {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        res.json(data);
+    }
+    catch(error)
+    {
+        console.error('Proxy error:', error);
+        res.status(500).json({ error: 'Proxy error' });
+    }
+});
+
 app.post("/submit-contact", (req, res) =>
 {
     const { name, email, message } = req.body;
