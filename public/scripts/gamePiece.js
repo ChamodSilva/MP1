@@ -54,12 +54,6 @@ class GamePiece
 		sprite.innerText = this.name;
 		console.log(`${this.name} has been rendered.`);
 		return sprite;
-		
-		// const sprite = document.createElement("div");
-		// sprite.classList.add(this.colour, this.type);
-		// sprite.innerText = this.name;
-		// console.log(`${this.name} has been rendered.`)
-		// return sprite;
 	}
 
 	getPossibleMoves()

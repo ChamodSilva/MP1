@@ -10,10 +10,11 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//API call from lichess.org
 app.post('/lichess-api', async (req, res) =>
 {
     const { gameId } = req.body;
-    const url = `https://lichess.org/game/export/${gameId}`; //?pgnInJson=true&accuracy=true
+    const url = `https://lichess.org/game/export/${gameId}`;
 
     try
     {
@@ -38,6 +39,7 @@ app.post('/lichess-api', async (req, res) =>
     }
 });
 
+//Post call to make/add to contact_submission.json
 app.post("/submit-contact", (req, res) =>
 {
     const { name, email, message } = req.body;
@@ -73,5 +75,6 @@ app.post("/submit-contact", (req, res) =>
 
 app.listen(port, () =>
 {
-    console.log(`Server listening at http://localhost:${port}/index.html`);
+    console.log(`Server listening at http://localhost:${port}`);
+    console.log(`Click the following link to get to home page: http://localhost:${port}/index.html`);
 });

@@ -1,5 +1,6 @@
 import ChessBoard from "./chessboard.js";
 
+//API Fetch call from server.js
 async function getChessGameJson(gameId)
 {
     try
@@ -100,8 +101,9 @@ function searchBtn()
     document.getElementById('search').addEventListener('click', () =>
     {
         console.log("Search clicked");
-        const gameIdToFetch = document.getElementById('gameIdInput').value; // Get gameId from input
-        if(gameIdToFetch) { // check if gameId is not empty
+        const gameIdToFetch = document.getElementById('gameIdInput').value;
+        if(gameIdToFetch)
+        {
             getChessGameJson(gameIdToFetch).then((gameData) =>
             {
                 if(gameData)

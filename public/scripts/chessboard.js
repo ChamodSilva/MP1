@@ -5,17 +5,12 @@ import
 	NUMBERS,
 	BLACK,
 	WHITE,
-	PATH_MARKER,
-	TARGET,
-	MOVESET,
     PIECE_NAME,
     PIECE_NAME_MINOR,
     PIECE_NAME_MAJOR,
     START_POSITION_PAWNS,
     START_POSITION_MINOR,
     START_POSITION_MAJOR,
-    BOARD_FILE,
-    BOARD_RANK,
 } from "./constants.js"
 
 import Piece from "./piece.js";

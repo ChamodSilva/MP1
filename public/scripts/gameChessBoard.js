@@ -5,8 +5,6 @@ import
     PATH_MARKER,
 } from "./constants.js";
 
-import GamePiece from "./gamePiece.js";
-
 class GameChessBoard
 {
 	constructor(containerID, size, visualize = true)

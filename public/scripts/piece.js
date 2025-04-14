@@ -27,9 +27,6 @@ class Piece
         this.sprite = visualize ? this.renderSprite() : null;
         this.isAlive = true;
         this.coords = this.convertToCoords(position);
-
-    
-        //this.prePosition = null;
     }
 
     convertToCoords(position)
