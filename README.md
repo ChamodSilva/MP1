@@ -80,6 +80,14 @@ To run this project locally, follow these steps:
 Feel free to fork the project and expand on it. It is public domain!!
 If you would like to join the project please get in contact with me :D.
 
+## Design
+
+**Figma Design**
+https://www.figma.com/proto/SPeTM746HEjyCqdz3Msacb/MP1-Chess?node-id=3-2&starting-point-node-id=3%3A2&t=vtzfxNrzDsAjOmGk-1
+
+**Design Document**
+Can be found under root folder under the name: `Mini-Project_OnlineChess.pdf`
+
 ## License
 
 GNU General Public License v3.0
