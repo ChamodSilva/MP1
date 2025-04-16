@@ -75,6 +75,8 @@ app.post("/submit-contact", (req, res) =>
 
 app.listen(port, () =>
 {
-    console.log(`Server listening at http://localhost:${port}`);
-    console.log(`Click the following link to get to home page: http://localhost:${port}/index.html`);
+    console.log(`Server is running. To close server press: CTRL + C`);
+    console.log(`===================================================`);
+    console.log(`Click (CTRL + CLICK in some cases) on the following link to get to home page:`);
+    console.log(`http://localhost:${port}/index.html`);
 });
